@@ -27,4 +27,6 @@ function SendValve001Command(msg)
 	return nil, ok == 0 and "sendmessage failed" or ok
 end
 
-print("SendValve001Command", SendValve001Command("say asd"))
+local cmd = ...
+
+return SendValve001Command(cmd)
